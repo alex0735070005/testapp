@@ -13,7 +13,7 @@ class App extends Component {
         <BrowserRouter>
             <div className="app-main-container">
                 <Header />
-                <img className="app-background" src={'/'+img}/>
+                <img className="app-background" src={img}/>
                 <div className="container app-page">
                     <Router />
                 </div>
