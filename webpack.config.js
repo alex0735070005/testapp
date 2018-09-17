@@ -31,7 +31,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, 'demo'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'app.js'
   },
 
@@ -42,7 +42,7 @@ module.exports = {
   ],
   
   devServer: {
-    contentBase: path.join(__dirname, 'demo'),
+    contentBase: path.join(__dirname, 'docs'),
     publicPath:'/',
     compress: true,
     historyApiFallback: true,
