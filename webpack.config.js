@@ -31,18 +31,16 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'app.js'
   },
-
-
 
   plugins: [    
     new ExtractTextPlugin('styles.css')
   ],
   
   devServer: {
-    contentBase: path.join(__dirname, 'docs'),
+    contentBase: path.join(__dirname, 'dist'),
     publicPath:'/',
     compress: true,
     historyApiFallback: true,
