@@ -1,0 +1,20 @@
+.photo-control
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5px;
+    min-height: 50px;
+    font-size: 20px;
+    span {
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    span.p-active{
+        background: rgba(0, 0, 0, 0.4);
+    }
+    select{
+        font-size: 20px;
+        padding: 7px;
+    }
+}

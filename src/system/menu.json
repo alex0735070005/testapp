@@ -1,0 +1,5 @@
+[
+    {"name":"Home", "link":"/", "active":true},
+    {"name":"Photos", "link":"/dashboard/photos"},
+    {"name":"Favorite Photos", "link":"/dashboard/photos/favorite"}
+]
