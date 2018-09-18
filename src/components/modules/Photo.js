@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/photo.scss';
-import {ADD_FAVORITE_PHOTO, CHANGE_PHOTO_STATUS, REMOVE_FAVORITE_PHOTO} from "../../types/app";
+import {removeFavoriteAction, addFavoriteAction} from '../../actions/app';
+
 import { connect } from 'react-redux';
 
 const Photo = (props) => {
@@ -26,17 +27,13 @@ const Photo = (props) => {
 };
 
 export default connect( 
-    state => ({
-      
-    }),
+    state => ({}),
     dispatch => ({        
         addFavorite:(k, d)=>{
-           dispatch({type:CHANGE_PHOTO_STATUS, data:k});
-           dispatch({type:ADD_FAVORITE_PHOTO, data:d});
+            addFavoriteAction(dispatch, k, d)
         },
         removeFavorite:(k, d)=>{
-            dispatch({type:CHANGE_PHOTO_STATUS, data:k});
-            dispatch({type:REMOVE_FAVORITE_PHOTO, data:d});
+            removeFavoriteAction(dispatch, k, d)
         }
     })
 )(Photo);

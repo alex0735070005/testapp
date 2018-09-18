@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import MenuLink from './MenuLink';
 import { connect } from 'react-redux'
-import {CHANGE_MENU} from "../../types/app";
+import {changeMenuAction} from '../../actions/app';
 import '../../styles/menu.scss';
 
 const Items = (props) => props.menu.map((item,k)=><MenuLink key={k} data={item} />);
@@ -25,12 +25,10 @@ class  Menu extends Component
 
 
 export default connect( 
-    state => ({
-        menu:state.menu
-    }),
+    state => ({menu:state.menu}),
     dispatch => ({        
         changeMenu:(d)=>{
-            dispatch({type:CHANGE_MENU, data:d});
+            changeMenuAction(dispatch, d);
         }
     })
 )(Menu);

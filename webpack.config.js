@@ -1,5 +1,7 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
 const path = require('path');
 
 module.exports = {
@@ -23,7 +25,10 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: {}
+            options: {
+              outputPath:'img/',
+              publicPath: 'img/'
+            }
           }
         ]
       }
@@ -36,7 +41,8 @@ module.exports = {
   },
 
   plugins: [    
-    new ExtractTextPlugin('styles.css')
+    new ExtractTextPlugin('styles.css'),
+    new OptimizeCssAssetsPlugin()
   ],
   
   devServer: {

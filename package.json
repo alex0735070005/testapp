@@ -30,6 +30,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
     "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.18.0",
@@ -42,6 +43,7 @@
     "react-masonry-component": "^6.2.1",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
+    "reactjs-localstorage": "0.0.7",
     "redux": "^4.0.0",
     "remove": "^0.1.5"
   }

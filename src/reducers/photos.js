@@ -1,7 +1,9 @@
 import {SET_PHOTOS, CHANGE_PHOTO_STATUS} from "../types/app";
-import {loadState} from '../localStorage.js';
-const dataState = loadState();
-const favorites = dataState ? dataState.favorites : { byId:{}};
+import {reactLocalStorage} from 'reactjs-localstorage';
+
+const dataFavorites = reactLocalStorage.getObject('favorites');
+
+const favorites = dataFavorites.byId ? dataFavorites : { byId:{}};
 
 export default function photos(state = [], action)
 {

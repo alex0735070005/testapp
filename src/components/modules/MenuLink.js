@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux'
-import {CHANGE_MENU} from "../../types/app";
+import {changeMenuAction} from '../../actions/app';
 
 const MenuLink = (props) => {
 
@@ -16,12 +16,10 @@ const MenuLink = (props) => {
 
 
 export default connect( 
-    state => ({
-      
-    }),
+    state => ({}),
     dispatch => ({        
-       changeMenu:(d)=>{
-           dispatch({type:CHANGE_MENU, data:d});
-       }
+        changeMenu:(d)=>{
+            changeMenuAction(dispatch, d);
+        }
     })
 )(MenuLink);

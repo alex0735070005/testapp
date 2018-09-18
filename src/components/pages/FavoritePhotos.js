@@ -24,9 +24,6 @@ class FavoritePhotos extends Component
 }
 
 export default connect( 
-    state => ({
-        photos:state.favorites,
-    }),
-    dispatch => ({   
-    })
+    state => ({photos:state.favorites}),
+    dispatch => ({})
 )(FavoritePhotos);

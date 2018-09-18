@@ -1,0 +1,42 @@
+{
+  "ftp://webco.pro@axenov": {
+    "app.js": {
+      "type": "-",
+      "size": 260034,
+      "lmtime": 0,
+      "modified": true
+    },
+    "app.js.map": {
+      "type": "-",
+      "size": 923666,
+      "lmtime": 0,
+      "modified": true
+    },
+    "favicon.png": {
+      "type": "-",
+      "size": 520,
+      "lmtime": 0,
+      "modified": false
+    },
+    "img": {},
+    "index.html": {
+      "type": "-",
+      "size": 486,
+      "lmtime": 0,
+      "modified": true
+    },
+    "styles.css": {
+      "type": "-",
+      "size": 1283,
+      "lmtime": 0,
+      "modified": true
+    },
+    "styles.css.map": {
+      "type": "-",
+      "size": 87,
+      "lmtime": 0,
+      "modified": false
+    }
+  },
+  "$version": 1
+}
